@@ -1,0 +1,611 @@
+/* ==========================================
+   FASHIONAI - COMPLETE STYLESHEET
+   ========================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #faf7f7;
+    color: #2b2426;
+}
+
+
+/* ==========================================
+   MAIN APP
+   ========================================== */
+
+.app {
+    display: grid;
+
+    grid-template-columns: 270px 1fr;
+
+    height: 100vh;
+
+    max-width: 1500px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    overflow: hidden;
+}
+
+
+/* ==========================================
+   SIDEBAR
+   ========================================== */
+
+aside {
+    display: flex;
+
+    flex-direction: column;
+
+    padding: 28px 20px;
+
+    background: #f4eeee;
+
+    border-right: 1px solid #eadede;
+}
+
+
+/* ==========================================
+   BRAND
+   ========================================== */
+
+.brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 28px;
+}
+
+
+.brand .logo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 13px;
+
+    background: #9c596b;
+
+    color: white;
+
+    font-size: 21px;
+}
+
+
+.brand h1 {
+    margin: 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 22px;
+
+    color: #2b2426;
+}
+
+
+.brand small {
+    color: #8b7c80;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   NEW CHAT BUTTON
+   ========================================== */
+
+#new {
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #2b2426;
+
+    color: white;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#new:hover {
+    background: #9c596b;
+}
+
+
+/* ==========================================
+   SIDEBAR LABEL
+   ========================================== */
+
+.label {
+    margin-top: 30px;
+
+    margin-bottom: 10px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #8b7c80;
+}
+
+
+/* ==========================================
+   QUICK BUTTONS
+   ========================================== */
+
+.quick {
+    width: 100%;
+
+    padding: 11px 8px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: transparent;
+
+    color: #55494c;
+
+    text-align: left;
+
+    font-size: 13px;
+
+    cursor: pointer;
+
+    margin-bottom: 3px;
+}
+
+
+.quick:hover {
+    background: rgba(255, 255, 255, 0.7);
+
+    color: #8b465a;
+}
+
+
+/* ==========================================
+   STATUS
+   ========================================== */
+
+.status {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    color: #6d6265;
+
+    font-size: 12px;
+}
+
+
+/* ==========================================
+   MAIN CHAT AREA
+   ========================================== */
+
+main {
+    display: flex;
+
+    flex-direction: column;
+
+    height: 100vh;
+
+    min-width: 0;
+
+    background: #fff;
+}
+
+
+/* ==========================================
+   HEADER
+   ========================================== */
+
+header {
+    padding: 28px 7%;
+
+    border-bottom: 1px solid #eadede;
+
+    background: #fff;
+}
+
+
+header span {
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    color: #9c596b;
+}
+
+
+header h2 {
+    margin: 6px 0 0;
+
+    font-family: Georgia, serif;
+
+    font-size: 28px;
+
+    color: #2b2426;
+}
+
+
+/* ==========================================
+   MESSAGES AREA
+   ========================================== */
+
+#messages {
+    flex: 1;
+
+    overflow-y: auto;
+
+    padding: 40px 8% 25px;
+}
+
+
+/* ==========================================
+   WELCOME SCREEN
+   ========================================== */
+
+.welcome {
+    max-width: 700px;
+
+    margin: 8vh auto 0;
+
+    text-align: center;
+}
+
+
+.welcome .logo {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    width: 46px;
+    height: 46px;
+
+    margin: 0 auto 18px;
+
+    border-radius: 14px;
+
+    background: #9c596b;
+
+    color: white;
+
+    font-size: 22px;
+}
+
+
+.welcome h3 {
+    margin: 0 0 12px;
+
+    font-family: Georgia, serif;
+
+    font-size: 34px;
+
+    color: #2b2426;
+}
+
+
+.welcome p {
+    max-width: 600px;
+
+    margin: 0 auto;
+
+    color: #8b7c80;
+
+    line-height: 1.7;
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   CHAT MESSAGES
+   ========================================== */
+
+.message-row {
+    display: flex;
+
+    width: 100%;
+
+    max-width: 850px;
+
+    margin: 15px auto;
+}
+
+
+.message-row.user {
+    justify-content: flex-end;
+}
+
+
+.message-row.assistant {
+    justify-content: flex-start;
+}
+
+
+.bubble {
+    max-width: 75%;
+
+    padding: 14px 17px;
+
+    border-radius: 17px;
+
+    font-size: 14px;
+
+    line-height: 1.65;
+
+    white-space: pre-wrap;
+}
+
+
+/* USER BUBBLE */
+
+.message-row.user .bubble {
+    background: #2b2426;
+
+    color: white;
+
+    border-bottom-right-radius: 5px;
+}
+
+
+/* AI BUBBLE */
+
+.message-row.assistant .bubble {
+    background: #f4e9eb;
+
+    color: #382f31;
+
+    border-bottom-left-radius: 5px;
+}
+
+
+/* ==========================================
+   TYPING
+   ========================================== */
+
+.typing {
+    display: none;
+
+    margin: 0 8% 10px;
+
+    color: #9c596b;
+
+    font-size: 12px;
+
+    font-style: italic;
+}
+
+
+/* ==========================================
+   INPUT AREA
+   ========================================== */
+
+#chatForm {
+    display: flex;
+
+    align-items: flex-end;
+
+    gap: 8px;
+
+    margin: 0 7% 8px;
+
+    padding: 8px;
+
+    border: 1px solid #e3d7d9;
+
+    border-radius: 17px;
+
+    background: white;
+
+    box-shadow: 0 8px 25px rgba(60, 35, 42, 0.06);
+}
+
+
+/* ==========================================
+   TEXT INPUT
+   ========================================== */
+
+#input {
+    flex: 1;
+
+    min-height: 45px;
+
+    max-height: 120px;
+
+    padding: 12px;
+
+    border: none;
+
+    outline: none;
+
+    resize: none;
+
+    background: transparent;
+
+    color: #2b2426;
+
+    font-family: Arial, Helvetica, sans-serif;
+
+    font-size: 14px;
+}
+
+
+#input::placeholder {
+    color: #aaa0a2;
+}
+
+
+/* ==========================================
+   SEND BUTTON
+   ========================================== */
+
+#send {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 45px;
+
+    height: 45px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: #9c596b;
+
+    color: white;
+
+    font-size: 19px;
+
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+
+#send:hover {
+    background: #7f4355;
+
+    transform: translateY(-1px);
+}
+
+
+#send:disabled {
+    opacity: 0.5;
+
+    cursor: not-allowed;
+
+    transform: none;
+}
+
+
+/* ==========================================
+   FOOTER NOTE
+   ========================================== */
+
+.note {
+    display: block;
+
+    padding-bottom: 14px;
+
+    text-align: center;
+
+    color: #aaa0a2;
+
+    font-size: 10px;
+}
+
+
+/* ==========================================
+   SCROLLBAR
+   ========================================== */
+
+#messages::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+#messages::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+
+#messages::-webkit-scrollbar-thumb {
+    background: #dfd0d3;
+
+    border-radius: 10px;
+}
+
+
+/* ==========================================
+   MOBILE
+   ========================================== */
+
+@media (max-width: 800px) {
+
+    .app {
+        grid-template-columns: 1fr;
+    }
+
+
+    aside {
+        display: none;
+    }
+
+
+    header {
+        padding: 22px 5%;
+    }
+
+
+    header h2 {
+        font-size: 24px;
+    }
+
+
+    #messages {
+        padding: 30px 5% 20px;
+    }
+
+
+    #chatForm {
+        margin-left: 5%;
+
+        margin-right: 5%;
+    }
+
+
+    .bubble {
+        max-width: 88%;
+    }
+
+
+    .welcome {
+        margin-top: 5vh;
+    }
+
+
+    .welcome h3 {
+        font-size: 28px;
+    }
+
+}

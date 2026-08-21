@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>FashionAI</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- SIDEBAR -->
+        <aside>
+
+            <div class="brand">
+
+                <div class="logo">✦</div>
+
+                <div>
+                    <h1>FashionAI</h1>
+                    <small>Personal stylist</small>
+                </div>
+
+            </div>
+
+            <button id="new">
+                ＋ New chat
+            </button>
+
+            <p class="label">
+                TRY ASKING
+            </p>
+
+            <button class="quick">
+                What should I wear to a concert?
+            </button>
+
+            <button class="quick">
+                I have a black top and jeans.
+            </button>
+
+            <button class="quick">
+                I have an unusual occasion. Help!
+            </button>
+
+            <div class="status">
+                ● Local AI stylist — ready
+            </div>
+
+        </aside>
+
+
+        <!-- MAIN CHAT -->
+        <main>
+
+            <header>
+
+                <span>
+                    AI STYLE ASSISTANT
+                </span>
+
+                <h2>
+                    What are we wearing?
+                </h2>
+
+            </header>
+
+
+            <!-- CHAT MESSAGES -->
+            <section id="messages">
+
+                <div class="welcome">
+
+                    <div class="logo">
+                        ✦
+                    </div>
+
+                    <h3>
+                        Hey! I’m FashionAI.
+                    </h3>
+
+                    <p>
+                        Tell me the occasion, your clothes,
+                        your vibe, or even something completely
+                        unusual. I’ll build a look around it.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- TYPING INDICATOR -->
+            <div
+                class="typing"
+                id="typing"
+            >
+                Styling your look…
+            </div>
+
+
+            <!-- MESSAGE INPUT -->
+            <form id="chatForm">
+
+                <textarea
+                    id="input"
+                    placeholder="Ask me anything about your outfit..."
+                    rows="1"
+                ></textarea>
+
+                <button
+                    id="send"
+                    type="submit"
+                >
+                    ➤
+                </button>
+
+            </form>
+
+
+            <small class="note">
+                Works locally — no API key or internet AI service required.
+            </small>
+
+        </main>
+
+    </div>
+
+
+    <script src="app.js"></script>
+
+</body>
+
+</html>
